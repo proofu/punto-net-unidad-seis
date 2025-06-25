@@ -1,0 +1,7 @@
+E:\.NET_UTN\TP.NET\TP_OrtizProfumieriUnzaga\TP_OrtizProfumieriUnzaga\bin\Debug\TP_OrtizProfumieriUnzaga.exe.config
+E:\.NET_UTN\TP.NET\TP_OrtizProfumieriUnzaga\TP_OrtizProfumieriUnzaga\bin\Debug\TP_OrtizProfumieriUnzaga.exe
+E:\.NET_UTN\TP.NET\TP_OrtizProfumieriUnzaga\TP_OrtizProfumieriUnzaga\bin\Debug\TP_OrtizProfumieriUnzaga.pdb
+E:\.NET_UTN\TP.NET\TP_OrtizProfumieriUnzaga\TP_OrtizProfumieriUnzaga\obj\Debug\TP_OrtizProfumieriUnzaga.csproj.AssemblyReference.cache
+E:\.NET_UTN\TP.NET\TP_OrtizProfumieriUnzaga\TP_OrtizProfumieriUnzaga\obj\Debug\TP_OrtizProfumieriUnzaga.csproj.CoreCompileInputs.cache
+E:\.NET_UTN\TP.NET\TP_OrtizProfumieriUnzaga\TP_OrtizProfumieriUnzaga\obj\Debug\TP_OrtizProfumieriUnzaga.exe
+E:\.NET_UTN\TP.NET\TP_OrtizProfumieriUnzaga\TP_OrtizProfumieriUnzaga\obj\Debug\TP_OrtizProfumieriUnzaga.pdb
