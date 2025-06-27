@@ -39,7 +39,8 @@ namespace TP_OrtizProfumieriUnzaga
         {
             //return $"             Codigo: {codigo} Nombre: {nombre} Descripcion: {descripcion}";
 
-            return $"Código: {codigo.ToString().PadRight(5)}  Nombre: {nombre.PadRight(15)}  Descripción: {descripcion}";
+            return $"Código: " +
+                $"{codigo.ToString().PadRight(5)}  Nombre: {nombre.PadRight(15)}  Descripción: {descripcion}";
         }
     }
 }

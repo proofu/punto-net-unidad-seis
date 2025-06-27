@@ -11,52 +11,22 @@ namespace TP_OrtizProfumieriUnzaga
         static void Main(string[] args)
         {
             GestorPermiso gestorPermiso = new GestorPermiso();
+
+            //Alta Permisos
             gestorPermiso.altaPermiso();
             gestorPermiso.altaPermiso();
-            gestorPermiso.altaPermiso();
+
+            //modificación permiso
+            gestorPermiso.modificarPermiso();
+
+            //eliminar
+            gestorPermiso.eliminarPermiso();
+
+
+            //listar
             gestorPermiso.listarPermisos();
             Console.ReadKey();
 
-
-
-
-
-
-
-
-
-            //bool salir = false;
-            //while (!salir)
-            //{
-            //    Console.Clear();
-            //    Console.WriteLine("Primer nivel (Clases):");
-            //    Console.WriteLine("1 - Permiso");
-            //    Console.WriteLine("2 - Grupo");
-            //    Console.WriteLine("3 - Usuario");
-            //    Console.WriteLine("4 - Salir");
-            //    Console.Write("Ingrese opción: ");
-            //    string opcion = Console.ReadLine();
-
-            //    switch (opcion)
-            //    {
-            //        case "1":
-            //            MenuEntidad("Permiso");
-            //            break;
-            //        case "2":
-            //            MenuEntidad("Grupo");
-            //            break;
-            //        case "3":
-            //            MenuEntidad("Usuario");
-            //            break;
-            //        case "4":
-            //            salir = true;
-            //            break;
-            //        default:
-            //            Console.WriteLine("Opción inválida. Presione una tecla para continuar.");
-            //            Console.ReadKey();
-            //            break;
-            //    }
-            //}
         }
 
         static void MenuEntidad(string entidad)

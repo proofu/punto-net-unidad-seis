@@ -1,0 +1,176 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\tp_ortizprofumieriunzaga\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|solutionrelative:tp_ortizprofumieriunzaga\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|c:\\users\\inaki\\desktop\\punto-net-unidad-seis\\tp_ortizprofumieriunzaga\\gestorpermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|solutionrelative:tp_ortizprofumieriunzaga\\gestorpermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\tp_ortizprofumieriunzaga\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|solutionrelative:tp_ortizprofumieriunzaga\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\tp_ortizprofumieriunzaga\\grupo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|solutionrelative:tp_ortizprofumieriunzaga\\grupo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\tp_ortizprofumieriunzaga\\permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|solutionrelative:tp_ortizprofumieriunzaga\\permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\tp_ortizprofumieriunzaga\\gestorgrupo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|solutionrelative:tp_ortizprofumieriunzaga\\gestorgrupo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\tp_ortizprofumieriunzaga\\validador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|solutionrelative:tp_ortizprofumieriunzaga\\validador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\tp_ortizprofumieriunzaga\\gestorusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6F51191-D54E-4611-BE66-47F6A4EF103C}|TP_OrtizProfumieriUnzaga\\TP_OrtizProfumieriUnzaga.csproj|solutionrelative:tp_ortizprofumieriunzaga\\gestorusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GestorPermiso.cs",
+              "DocumentMoniker": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\GestorPermiso.cs",
+              "RelativeDocumentMoniker": "TP_OrtizProfumieriUnzaga\\GestorPermiso.cs",
+              "ToolTip": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\GestorPermiso.cs",
+              "RelativeToolTip": "TP_OrtizProfumieriUnzaga\\GestorPermiso.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwEgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T22:52:56.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GestorUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\GestorUsuario.cs",
+              "RelativeDocumentMoniker": "TP_OrtizProfumieriUnzaga\\GestorUsuario.cs",
+              "ToolTip": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\GestorUsuario.cs",
+              "RelativeToolTip": "TP_OrtizProfumieriUnzaga\\GestorUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T22:52:57.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\Program.cs",
+              "RelativeDocumentMoniker": "TP_OrtizProfumieriUnzaga\\Program.cs",
+              "ToolTip": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\Program.cs",
+              "RelativeToolTip": "TP_OrtizProfumieriUnzaga\\Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T22:52:57.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Validador.cs",
+              "DocumentMoniker": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\Validador.cs",
+              "RelativeDocumentMoniker": "TP_OrtizProfumieriUnzaga\\Validador.cs",
+              "ToolTip": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\Validador.cs",
+              "RelativeToolTip": "TP_OrtizProfumieriUnzaga\\Validador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T22:52:56.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GestorGrupo.cs",
+              "DocumentMoniker": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\GestorGrupo.cs",
+              "RelativeDocumentMoniker": "TP_OrtizProfumieriUnzaga\\GestorGrupo.cs",
+              "ToolTip": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\GestorGrupo.cs",
+              "RelativeToolTip": "TP_OrtizProfumieriUnzaga\\GestorGrupo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T22:52:57.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Grupo.cs",
+              "DocumentMoniker": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\Grupo.cs",
+              "RelativeDocumentMoniker": "TP_OrtizProfumieriUnzaga\\Grupo.cs",
+              "ToolTip": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\Grupo.cs",
+              "RelativeToolTip": "TP_OrtizProfumieriUnzaga\\Grupo.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T22:52:57.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Permiso.cs",
+              "DocumentMoniker": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\Permiso.cs",
+              "RelativeDocumentMoniker": "TP_OrtizProfumieriUnzaga\\Permiso.cs",
+              "ToolTip": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\Permiso.cs",
+              "RelativeToolTip": "TP_OrtizProfumieriUnzaga\\Permiso.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T22:52:57.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\Usuario.cs",
+              "RelativeDocumentMoniker": "TP_OrtizProfumieriUnzaga\\Usuario.cs",
+              "ToolTip": "C:\\Users\\inaki\\Desktop\\punto-net-unidad-seis\\TP_OrtizProfumieriUnzaga\\Usuario.cs",
+              "RelativeToolTip": "TP_OrtizProfumieriUnzaga\\Usuario.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAcwD4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T22:52:57.114Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

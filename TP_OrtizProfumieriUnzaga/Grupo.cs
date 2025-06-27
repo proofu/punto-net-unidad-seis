@@ -52,7 +52,8 @@ namespace TP_OrtizProfumieriUnzaga
 
         public override string ToString()
         {
-            return $"             Codigo: {codigo} Nombre: {nombre} Lista de Permisos: [{ObtenerDescripcionesPermisos()}]";
+            return $"Codigo: " +
+                $"{codigo} Nombre: {nombre} Lista de Permisos: [{ObtenerDescripcionesPermisos()}]";
         }
     }
 }
