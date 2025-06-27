@@ -13,20 +13,75 @@ namespace TP_OrtizProfumieriUnzaga
             GestorPermiso gestorPermiso = new GestorPermiso();
 
             //Alta Permisos
-            gestorPermiso.altaPermiso();
-            gestorPermiso.altaPermiso();
+            //gestorPermiso.altaPermiso();
+            //gestorPermiso.altaPermiso();
 
             //modificación permiso
-            gestorPermiso.modificarPermiso();
+            //gestorPermiso.modificarPermiso();
 
             //eliminar
-            gestorPermiso.eliminarPermiso();
+            //gestorPermiso.eliminarPermiso();
 
 
             //listar
-            gestorPermiso.listarPermisos();
+            //gestorPermiso.listarPermisos();
+
+
+            
+
+            crearSemillas();
+
+
+
             Console.ReadKey();
 
+        }
+
+        private static void crearSemillas()
+        {
+
+            // 2. Creamos listas de permisos
+            var permisosAdmin = new List<Permiso>
+            {
+                new Permiso(1, "Crear", "Permite crear nuevos registros en el sistema"),
+                new Permiso(2, "Editar", "Permite modificar registros existentes"),
+                new Permiso(3, "Eliminar", "Permite eliminar registros del sistema")
+            };
+
+            var permisosBasicos = new List<Permiso>
+            {
+                new Permiso(4, "Ver", "Permite visualizar los datos sin modificarlos"),
+                new Permiso(5, "Descargar", "Permite descargar archivos o reportes del sistema")
+            };
+
+
+            // 1. Definimos dos grupos
+            Grupo grupoAdmin = new Grupo(1, "Administradores", permisosAdmin);
+            Grupo grupoUsuario = new Grupo(2, "Usuarios", permisosBasicos);
+
+            // 3. Instanciamos dos usuarios
+            Usuario usuario1 = new Usuario(
+                codigo: 1001,
+                nombre: "Ana García",
+                password: "AnaPass123",
+                email: "ana.garcia@ejemplo.com",
+                telefono: "011-1234-5678",
+                grupo: grupoAdmin,
+                permisos: permisosAdmin
+            );
+
+            Usuario usuario2 = new Usuario(
+                codigo: 1002,
+                nombre: "Juan Pérez",
+                password: "JuanPass456",
+                email: "juan.perez@ejemplo.com",
+                telefono: "011-8765-4321",
+                grupo: grupoUsuario,
+                permisos: permisosBasicos
+            );
+
+            // 4. Mostramos por consola
+            Console.WriteLine(usuario2.ToString());
         }
 
         static void MenuEntidad(string entidad)
