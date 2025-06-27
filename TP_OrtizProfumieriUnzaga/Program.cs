@@ -18,7 +18,60 @@ namespace TP_OrtizProfumieriUnzaga
                 new Permiso(3, "Eliminación", "Puede eliminar datos")
             };
             GestorPermiso gestorPermiso = new GestorPermiso();
-            GestorGrupo gestorGrupo = new GestorGrupo(permisos);   
+
+            // grupos iniciales
+            Grupo grupoAdmin = new Grupo(
+                codigo: 1,
+                nombre: "Administradores",
+                permisos: new List<Permiso>(permisos) 
+            );
+            Grupo grupoLectura = new Grupo(
+                codigo: 2,
+                nombre: "Lectura",
+                permisos: new List<Permiso> { permisos[0] } 
+            );
+            Grupo grupoEditores = new Grupo(
+                codigo: 3,
+                nombre: "Editores",
+                permisos: new List<Permiso> { permisos[0], permisos[1] } 
+            );
+            List<Grupo> grupos = new List<Grupo> { grupoAdmin, grupoLectura, grupoEditores };
+
+
+
+            // usuarios iniciales
+            Usuario usuario1 = new Usuario(
+                codigo: 1001,
+                nombre: "Ana García",
+                password: "AnaPass123",
+                email: "ana.garcia@ejemplo.com",
+                telefono: "011-1234-5678",
+                grupo: grupoAdmin,
+                permisos: grupoAdmin.Permisos.ToList()
+            );
+            Usuario usuario2 = new Usuario(
+                codigo: 1002,
+                nombre: "Luis Pérez",
+                password: "LuisClave456",
+                email: "luis.perez@ejemplo.com",
+                telefono: "011-2345-6789",
+                grupo: grupoLectura,
+                permisos: grupoLectura.Permisos.ToList()
+            );
+            //Usuario usuario3 = new Usuario(
+            //    codigo: 1003,
+            //    nombre: "María López",
+            //    password: "Maria789!",
+            //    email: "maria.lopez@ejemplo.com",
+            //    telefono: "011-3456-7890",
+            //    grupo: grupoEditores,
+            //    permisos: grupoEditores.Permisos.ToList()
+            //);
+            List<Usuario> usuarios = new List<Usuario> { usuario1, usuario2 };
+            //List<Usuario> usuarios = new List<Usuario> { usuario1, usuario2, usuario3 };
+
+                        
+            GestorGrupo gestorGrupo = new GestorGrupo(permisos, usuarios, grupos);
 
             //Alta Permisos
             //gestorPermiso.altaPermiso();
@@ -34,18 +87,18 @@ namespace TP_OrtizProfumieriUnzaga
             //listar
             //gestorPermiso.listarPermisos();
 
-            //GRUPO GESTOR_____
-            gestorGrupo.CargarGruposIniciales();
+            //GRUPO GESTOR_____            
             //listar
-            gestorGrupo.listadoGrupo();
+            gestorGrupo.ListadoGrupo();
             //alta
             //gestorGrupo.AltaGrupo();
             //modificar
-            gestorGrupo.ModificarGrupo();
-            gestorGrupo.listadoGrupo();
+            //gestorGrupo.ModificarGrupo();
+            gestorGrupo.EliminarGrupo();
+            gestorGrupo.ListadoGrupo();
 
 
-            crearSemillas();
+            //crearSemillas();
 
 
 
@@ -53,52 +106,52 @@ namespace TP_OrtizProfumieriUnzaga
 
         }
 
-        private static void crearSemillas()
-        {
+        //private static void crearSemillas()
+        //{
 
-            // 2. Creamos listas de permisos
-            var permisosAdmin = new List<Permiso>
-            {
-                new Permiso(1, "Crear", "Permite crear nuevos registros en el sistema"),
-                new Permiso(2, "Editar", "Permite modificar registros existentes"),
-                new Permiso(3, "Eliminar", "Permite eliminar registros del sistema")
-            };
+        //    // 2. Creamos listas de permisos
+        //    var permisosAdmin = new List<Permiso>
+        //    {
+        //        new Permiso(1, "Crear", "Permite crear nuevos registros en el sistema"),
+        //        new Permiso(2, "Editar", "Permite modificar registros existentes"),
+        //        new Permiso(3, "Eliminar", "Permite eliminar registros del sistema")
+        //    };
 
-            var permisosBasicos = new List<Permiso>
-            {
-                new Permiso(4, "Ver", "Permite visualizar los datos sin modificarlos"),
-                new Permiso(5, "Descargar", "Permite descargar archivos o reportes del sistema")
-            };
+        //    var permisosBasicos = new List<Permiso>
+        //    {
+        //        new Permiso(4, "Ver", "Permite visualizar los datos sin modificarlos"),
+        //        new Permiso(5, "Descargar", "Permite descargar archivos o reportes del sistema")
+        //    };
 
 
-            // 1. Definimos dos grupos
-            Grupo grupoAdmin = new Grupo(1, "Administradores", permisosAdmin);
-            Grupo grupoUsuario = new Grupo(2, "Usuarios", permisosBasicos);
+        //    // 1. Definimos dos grupos
+        //    Grupo grupoAdmin = new Grupo(1, "Administradores", permisosAdmin);
+        //    Grupo grupoUsuario = new Grupo(2, "Usuarios", permisosBasicos);
 
-            // 3. Instanciamos dos usuarios
-            Usuario usuario1 = new Usuario(
-                codigo: 1001,
-                nombre: "Ana García",
-                password: "AnaPass123",
-                email: "ana.garcia@ejemplo.com",
-                telefono: "011-1234-5678",
-                grupo: grupoAdmin,
-                permisos: permisosAdmin
-            );
+        //    // 3. Instanciamos dos usuarios
+        //    Usuario usuario1 = new Usuario(
+        //        codigo: 1001,
+        //        nombre: "Ana García",
+        //        password: "AnaPass123",
+        //        email: "ana.garcia@ejemplo.com",
+        //        telefono: "011-1234-5678",
+        //        grupo: grupoAdmin,
+        //        permisos: permisosAdmin
+        //    );
 
-            Usuario usuario2 = new Usuario(
-                codigo: 1002,
-                nombre: "Juan Pérez",
-                password: "JuanPass456",
-                email: "juan.perez@ejemplo.com",
-                telefono: "011-8765-4321",
-                grupo: grupoUsuario,
-                permisos: permisosBasicos
-            );
+        //    Usuario usuario2 = new Usuario(
+        //        codigo: 1002,
+        //        nombre: "Juan Pérez",
+        //        password: "JuanPass456",
+        //        email: "juan.perez@ejemplo.com",
+        //        telefono: "011-8765-4321",
+        //        grupo: grupoUsuario,
+        //        permisos: permisosBasicos
+        //    );
 
-            // 4. Mostramos por consola
-            //Console.WriteLine(usuario2.ToString());
-        }
+        //    // 4. Mostramos por consola
+        //    //Console.WriteLine(usuario2.ToString());
+        //}
 
         static void MenuEntidad(string entidad)
         {

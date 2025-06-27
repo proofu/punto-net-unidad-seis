@@ -10,11 +10,13 @@ namespace TP_OrtizProfumieriUnzaga
     {
         private List<Grupo> grupos;
         private List<Permiso> permisosDisponibles;
+        private List<Usuario> usuarios;
 
-        public GestorGrupo(List<Permiso> permisosDisponibles)
+        public GestorGrupo(List<Permiso> permisosDisponibles, List<Usuario> usuariosExistentes, List<Grupo> gruposExistentes)
         {
-            this.grupos = new List<Grupo>();
             this.permisosDisponibles = permisosDisponibles ?? new List<Permiso>();
+            this.usuarios = usuariosExistentes ?? new List<Usuario>();
+            this.grupos = gruposExistentes ?? new List<Grupo>();
         }
 
 
@@ -145,13 +147,44 @@ namespace TP_OrtizProfumieriUnzaga
 
             return seleccionados;
         }
-        // Método para cargar grupos de ejemplo
-        public void CargarGruposIniciales()
+
+        public void EliminarGrupo()
         {
-            grupos.Add(new Grupo(1, "Administradores", permisosDisponibles.ToList()));
-            grupos.Add(new Grupo(2, "Usuarios", new List<Permiso> { permisosDisponibles.FirstOrDefault() }));
-            grupos.Add(new Grupo(3, "Invitados", new List<Permiso>()));
+            //Console.Clear();
+            Console.WriteLine("===== Eliminar Grupo =====");
+            Console.Write("Ingrese el código del grupo a eliminar: ");
+            int codigo = Validador.PedirEntero();
+
+            var grupo = grupos.FirstOrDefault(g => g.Codigo == codigo);
+            
+
+            if (grupo == null)
+            {
+                Console.WriteLine("No se encontró el grupo.");
+                return;
+            }
+
+            // Verificar si algún usuario tiene asignado este grupo
+            bool grupoEnUso = usuarios.Any(u => u.Grupo != null && u.Grupo.Codigo == codigo);
+            if (grupoEnUso)
+            {
+                Console.WriteLine("No se puede eliminar el grupo porque está asignado a uno o más usuarios.");
+                return;
+            }
+
+            grupos.Remove(grupo);
+            Console.WriteLine("Grupo eliminado con éxito.");
         }
+
+
+
+        //// Método para cargar grupos de ejemplo
+        //public void CargarGruposIniciales()
+        //{
+        //    grupos.Add(new Grupo(1, "Administradores", permisosDisponibles.ToList()));
+        //    grupos.Add(new Grupo(2, "Usuarios", new List<Permiso> { permisosDisponibles.FirstOrDefault() }));
+        //    grupos.Add(new Grupo(3, "Invitados", new List<Permiso>()));
+        //}
         
 
     }
