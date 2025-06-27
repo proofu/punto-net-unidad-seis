@@ -164,7 +164,7 @@ namespace TP_OrtizProfumieriUnzaga
                 return;
             }
 
-            // Verificar si algún usuario tiene asignado este grupo
+            // verifica si algún usuario está asociado al grupo
             bool grupoEnUso = usuarios.Any(u => u.Grupo != null && u.Grupo.Codigo == codigo);
             if (grupoEnUso)
             {
@@ -172,8 +172,15 @@ namespace TP_OrtizProfumieriUnzaga
                 return;
             }
 
+            // verifica si hay permisos asociados
+            if (grupo.Permisos.Count > 0)
+            {
+                Console.WriteLine("No se puede eliminar el grupo porque tiene permisos asociados.");
+                return;
+            }
+
             grupos.Remove(grupo);
-            Console.WriteLine("Grupo eliminado con éxito.");
+            Console.WriteLine("Grupo eliminado con éxito.");            
         }
 
 

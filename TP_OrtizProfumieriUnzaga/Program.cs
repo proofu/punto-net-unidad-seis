@@ -33,7 +33,8 @@ namespace TP_OrtizProfumieriUnzaga
             Grupo grupoEditores = new Grupo(
                 codigo: 3,
                 nombre: "Editores",
-                permisos: new List<Permiso> { permisos[0], permisos[1] } 
+                //permisos: new List<Permiso> { permisos[0], permisos[1] } 
+                permisos: new List<Permiso> {} 
             );
             List<Grupo> grupos = new List<Grupo> { grupoAdmin, grupoLectura, grupoEditores };
 
@@ -95,6 +96,7 @@ namespace TP_OrtizProfumieriUnzaga
             //modificar
             //gestorGrupo.ModificarGrupo();
             gestorGrupo.EliminarGrupo();
+            Console.ReadKey();
             gestorGrupo.ListadoGrupo();
 
 
