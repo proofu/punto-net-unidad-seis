@@ -63,7 +63,7 @@ namespace TP_OrtizProfumieriUnzaga
             Console.WriteLine("Permiso agregado con exito");
         }
         //MODIFICAR PERMISO
-        public void modificarPermiso()
+        public void ModificarPermiso()
         {
             Console.Clear();
             Console.WriteLine("===== Modificar Permiso ====== ");

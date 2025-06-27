@@ -10,7 +10,15 @@ namespace TP_OrtizProfumieriUnzaga
     {
         static void Main(string[] args)
         {
+            // Crear permisos iniciales
+            List<Permiso> permisos = new List<Permiso>
+            {
+                new Permiso(1, "Lectura", "Puede ver datos"),
+                new Permiso(2, "Escritura", "Puede modificar datos"),
+                new Permiso(3, "Eliminación", "Puede eliminar datos")
+            };
             GestorPermiso gestorPermiso = new GestorPermiso();
+            GestorGrupo gestorGrupo = new GestorGrupo(permisos);   
 
             //Alta Permisos
             //gestorPermiso.altaPermiso();
@@ -26,8 +34,16 @@ namespace TP_OrtizProfumieriUnzaga
             //listar
             //gestorPermiso.listarPermisos();
 
+            //GRUPO GESTOR_____
+            gestorGrupo.CargarGruposIniciales();
+            //listar
+            gestorGrupo.listadoGrupo();
+            //alta
+            //gestorGrupo.AltaGrupo();
+            //modificar
+            gestorGrupo.ModificarGrupo();
+            gestorGrupo.listadoGrupo();
 
-            
 
             crearSemillas();
 
@@ -81,7 +97,7 @@ namespace TP_OrtizProfumieriUnzaga
             );
 
             // 4. Mostramos por consola
-            Console.WriteLine(usuario2.ToString());
+            //Console.WriteLine(usuario2.ToString());
         }
 
         static void MenuEntidad(string entidad)

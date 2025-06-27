@@ -50,6 +50,11 @@ namespace TP_OrtizProfumieriUnzaga
             return resultado.TrimEnd(',', ' ');
         }
 
+        public void SetPermisos(List<Permiso> nuevosPermisos)
+        {
+            permisos = nuevosPermisos ?? new List<Permiso>();
+        }
+
         public override string ToString()
         {
             return $"Usuario:\n" +
