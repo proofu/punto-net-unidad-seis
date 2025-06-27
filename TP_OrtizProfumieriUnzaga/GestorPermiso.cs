@@ -92,7 +92,7 @@ namespace TP_OrtizProfumieriUnzaga
         }
 
         //ELIMINAR PERMISO
-        public void eliminarPermiso()
+        public void eliminarPermiso(List<Usuario> usuarios, List<Grupo> grupos)
         {
             Console.Clear();
             Console.WriteLine("========= Eliminar Permiso ========");
@@ -105,6 +105,20 @@ namespace TP_OrtizProfumieriUnzaga
             if (permiso == null)
             {
                 Console.WriteLine("No se encuentra el permiso");
+                return;
+            }
+
+            bool usoPorusuario = usuarios.Any(u => u.Codigo == codigo);
+            if (usoPorusuario)
+            {
+                Console.WriteLine("No se puede eliminar porque tiene un usuario asociado");
+                return;
+            }
+
+            bool usoPorGrupo = grupos.Any(g => g.Codigo == codigo);
+            if (usoPorGrupo)
+            {
+                Console.WriteLine("No se puede eliminar porque tiene un grupo asociado");
                 return;
             }
 

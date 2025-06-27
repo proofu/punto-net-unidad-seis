@@ -251,7 +251,7 @@ namespace TP_OrtizProfumieriUnzaga
         public void eliminarUsuario()
         {
             Console.Clear();
-            Console.WriteLine("=====ELIMinar USUARIO =========");
+            Console.WriteLine("========= Eliminar Usuario =========");
 
             Console.WriteLine("Ingrese el codigo para eliminar el usuario");
             int codigo = Validador.PedirEntero();
@@ -261,6 +261,18 @@ namespace TP_OrtizProfumieriUnzaga
             {
                 Console.WriteLine("No se encontro el usuario");
                 return;
+            }
+
+            if(usuario.Permisos != null && usuario.Permisos.Count>0)
+            {
+                Console.WriteLine("No se puede eliminar el usuario porque tiene permisos");
+                return;
+            }
+
+            if (usuario.Grupo != null)
+            {
+                Console.WriteLine("No se puede eliminar el usuario porque tiene grupo");
+                    return;
             }
             usuarios.Remove(usuario);
             Console.WriteLine("Usuario Eliminado");
