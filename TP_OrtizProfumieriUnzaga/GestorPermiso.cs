@@ -17,6 +17,8 @@ namespace TP_OrtizProfumieriUnzaga
         {
             permisos = new List<Permiso>();
         }
+
+
         public void listarPermisos()
         {
             Console.Clear();
