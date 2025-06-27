@@ -127,6 +127,9 @@ namespace TP_OrtizProfumieriUnzaga
             Console.WriteLine("Permiso Eliminado");
 
         }
-
+        public void agregarPermisos(List<Permiso> permisos)
+        {
+            this.permisos = permisos;
+        }
     }
 }

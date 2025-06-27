@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace TP_OrtizProfumieriUnzaga
@@ -30,6 +31,8 @@ namespace TP_OrtizProfumieriUnzaga
             {
                 Console.WriteLine(usuario.ToString());
             }
+
+            
         }
 
         //ALTA USUARIO
@@ -128,7 +131,7 @@ namespace TP_OrtizProfumieriUnzaga
 
         public void modificarUsuario(List<Grupo> grupos, List<Permiso> permisos)
         {
-            Console.Clear();
+            
             Console.WriteLine("=====Modificar Usuario =====");
 
             Console.WriteLine("Codigo de Usuario: ");
@@ -250,7 +253,7 @@ namespace TP_OrtizProfumieriUnzaga
         //ELIMINAR USUARIO
         public void eliminarUsuario()
         {
-            Console.Clear();
+            //Console.Clear();
             Console.WriteLine("========= Eliminar Usuario =========");
 
             Console.WriteLine("Ingrese el codigo para eliminar el usuario");
@@ -277,6 +280,9 @@ namespace TP_OrtizProfumieriUnzaga
             usuarios.Remove(usuario);
             Console.WriteLine("Usuario Eliminado");
         }
-
+        public void agregarUsuarios(List<Usuario> usuarios)
+        {
+            this.usuarios = usuarios;
+        }
     }
 }

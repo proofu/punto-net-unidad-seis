@@ -8,6 +8,9 @@ namespace TP_OrtizProfumieriUnzaga
 {
     internal class Program
     {
+        private static GestorPermiso gestorPermiso;
+        private static GestorGrupo gestorGrupo;
+        private static GestorUsuario gestorUsuario;
         static void Main(string[] args)
         {
             // Crear permisos iniciales
@@ -17,7 +20,10 @@ namespace TP_OrtizProfumieriUnzaga
                 new Permiso(2, "Escritura", "Puede modificar datos"),
                 new Permiso(3, "Eliminación", "Puede eliminar datos")
             };
-            GestorPermiso gestorPermiso = new GestorPermiso();
+            gestorPermiso = new GestorPermiso();
+            //gestorGrupo = new GestorGrupo();
+            gestorUsuario = new GestorUsuario();
+            gestorPermiso.agregarPermisos(permisos);
 
             // grupos iniciales
             Grupo grupoAdmin = new Grupo(
@@ -70,9 +76,9 @@ namespace TP_OrtizProfumieriUnzaga
             //);
             List<Usuario> usuarios = new List<Usuario> { usuario1, usuario2 };
             //List<Usuario> usuarios = new List<Usuario> { usuario1, usuario2, usuario3 };
-
+            gestorUsuario.agregarUsuarios( usuarios );
                         
-            GestorGrupo gestorGrupo = new GestorGrupo(permisos, usuarios, grupos);
+            gestorGrupo = new GestorGrupo(permisos, usuarios, grupos);
 
             //Alta Permisos
             //gestorPermiso.altaPermiso();
@@ -95,17 +101,48 @@ namespace TP_OrtizProfumieriUnzaga
             //gestorGrupo.AltaGrupo();
             //modificar
             //gestorGrupo.ModificarGrupo();
-            gestorGrupo.EliminarGrupo();
-            Console.ReadKey();
-            gestorGrupo.ListadoGrupo();
+           // gestorGrupo.EliminarGrupo();
+            //Console.ReadKey();
+            //gestorGrupo.ListadoGrupo();
 
 
             //crearSemillas();
 
 
 
-            Console.ReadKey();
+            //Console.ReadKey();
+            bool salir = false;
+            while (!salir)
+            {
+                Console.Clear();
+                Console.WriteLine("Primer nivel (Clases):");
+                Console.WriteLine("1 - Permiso");
+                Console.WriteLine("2 - Grupo");
+                Console.WriteLine("3 - Usuario");
+                Console.WriteLine("4 - Salir");
+                Console.Write("Ingrese opción: ");
+                string opcion = Console.ReadLine();
 
+                switch (opcion)
+                {
+                    case "1":
+                        MenuEntidad("Permiso",grupos,permisos,usuarios);
+                        break;
+                    case "2":
+                        MenuEntidad("Grupo", grupos, permisos,usuarios);
+                        break;
+                    case "3":
+                        MenuEntidad("Usuario", grupos, permisos,usuarios);
+                        break;
+                    case "4":
+                        salir = true;
+                        break;
+                    default:
+                        Console.WriteLine("Opción inválida. Presione una tecla para continuar.");
+                        Console.ReadKey();
+                        break;
+                }
+            }
         }
 
         //private static void crearSemillas()
@@ -155,7 +192,7 @@ namespace TP_OrtizProfumieriUnzaga
         //    //Console.WriteLine(usuario2.ToString());
         //}
 
-        static void MenuEntidad(string entidad)
+        static void MenuEntidad(string entidad,List<Grupo> grupos , List<Permiso> permisos,List<Usuario> usuarios)
         {
             bool salirEntidad = false;
             while (!salirEntidad)
@@ -174,19 +211,74 @@ namespace TP_OrtizProfumieriUnzaga
                 {
                     case "1":
                         Console.WriteLine($"Listar {entidad}...");
-                        // Aquí llamás al método que lista la entidad
+                        // método que lista la entidad
+                        if (entidad.ToLower() == "permiso")
+                        {
+                            gestorPermiso.listarPermisos();
+
+                        }
+                        else if (entidad.ToLower() == "grupo")
+                        {
+                            gestorGrupo.ListadoGrupo();
+                        }
+                        else
+                        {
+                            gestorUsuario.listarUsuarios();
+                        }
                         break;
                     case "2":
                         Console.WriteLine($"Alta {entidad}...");
-                        // Aquí llamás al método para dar de alta la entidad
+                        // método para dar de alta la entidad
+                        if (entidad.ToLower() == "permiso")
+                        {
+                            gestorPermiso.altaPermiso();
+
+                        }
+                        else if (entidad.ToLower() == "grupo")
+                        {
+                            gestorGrupo.AltaGrupo();
+                        }
+                        else
+                        {
+                            gestorUsuario.altaUsuarios(grupos,permisos);
+                        }
                         break;
                     case "3":
                         Console.WriteLine($"Modificación {entidad}...");
-                        // Aquí llamás al método para modificar la entidad
+                        // método para modificar la entidad
+                        if (entidad.ToLower() == "permiso")
+                        {
+                            gestorPermiso.ModificarPermiso();
+
+                        }
+                        else if (entidad.ToLower() == "grupo")
+                        {
+                            gestorGrupo.ListadoGrupo();
+                            gestorGrupo.ModificarGrupo();
+                        }
+                        else
+                        {
+                            gestorUsuario.listarUsuarios();
+                            gestorUsuario.modificarUsuario(grupos,permisos);
+                        }
                         break;
                     case "4":
                         Console.WriteLine($"Eliminar {entidad}...");
-                        // Aquí llamás al método para eliminar la entidad
+                        // método para eliminar la entidad
+                        if (entidad.ToLower() == "permiso")
+                        {
+                            gestorPermiso.eliminarPermiso(usuarios,grupos);
+                        }
+                        else if (entidad.ToLower() == "grupo")
+                        {
+                            gestorGrupo.ListadoGrupo();
+                            gestorGrupo.EliminarGrupo();
+                        }
+                        else
+                        {
+                            gestorUsuario.listarUsuarios();
+                            gestorUsuario.eliminarUsuario();
+                        }
                         break;
                     case "5":
                         salirEntidad = true;
