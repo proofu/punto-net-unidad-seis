@@ -12,3 +12,10 @@ C:\Users\inaki\Desktop\punto-net-unidad-seis\TP_OrtizProfumieriUnzaga\obj\Debug\
 C:\Users\inaki\Desktop\punto-net-unidad-seis\TP_OrtizProfumieriUnzaga\obj\Debug\TP_OrtizProfumieriUnzaga.csproj.CoreCompileInputs.cache
 C:\Users\inaki\Desktop\punto-net-unidad-seis\TP_OrtizProfumieriUnzaga\obj\Debug\TP_OrtizProfumieriUnzaga.exe
 C:\Users\inaki\Desktop\punto-net-unidad-seis\TP_OrtizProfumieriUnzaga\obj\Debug\TP_OrtizProfumieriUnzaga.pdb
+C:\Users\alfred\Source\Repos\punto-net-unidad-seis\TP_OrtizProfumieriUnzaga\obj\Debug\TP_OrtizProfumieriUnzaga.csproj.AssemblyReference.cache
+C:\Users\alfred\Source\Repos\punto-net-unidad-seis\TP_OrtizProfumieriUnzaga\obj\Debug\TP_OrtizProfumieriUnzaga.csproj.CoreCompileInputs.cache
+C:\Users\alfred\Source\Repos\punto-net-unidad-seis\TP_OrtizProfumieriUnzaga\obj\Debug\TP_OrtizProfumieriUnzaga.exe
+C:\Users\alfred\Source\Repos\punto-net-unidad-seis\TP_OrtizProfumieriUnzaga\obj\Debug\TP_OrtizProfumieriUnzaga.pdb
+C:\Users\alfred\Source\Repos\punto-net-unidad-seis\TP_OrtizProfumieriUnzaga\bin\Debug\TP_OrtizProfumieriUnzaga.exe.config
+C:\Users\alfred\Source\Repos\punto-net-unidad-seis\TP_OrtizProfumieriUnzaga\bin\Debug\TP_OrtizProfumieriUnzaga.exe
+C:\Users\alfred\Source\Repos\punto-net-unidad-seis\TP_OrtizProfumieriUnzaga\bin\Debug\TP_OrtizProfumieriUnzaga.pdb
